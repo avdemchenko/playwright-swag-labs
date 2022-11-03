@@ -7,4 +7,7 @@ test('Should login with standard user', async ({ page }) => {
   await page.fill('#password', 'secret_sauce');
   await page.click('#login-button');
   await expect(page.locator('.shopping_cart_link')).toBeVisible();
+
+  const screenshot = await page.screenshot();
+  await test.info().attach('screenshot', { body: screenshot, contentType: 'image/png' });
 });
