@@ -11,7 +11,6 @@ Before(async () => {
         browser = await chromium.launch({ headless: false });
         const context = await browser.newContext();
         page = await context.newPage();
-        await page.goto('https://www.saucedemo.com/');
         console.log('captured')
     } catch (error) {
         console.log('error');
