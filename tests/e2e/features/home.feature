@@ -1,6 +1,6 @@
-Feature: As a user I want to visit main page
+Feature: As a user I want to visit home page
 
   @debug
-  Scenario: Open main page
+  Scenario: Open home page
     Given I open 'home' page
     Then I should see 'Swag Labs' page title
