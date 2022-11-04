@@ -1,4 +1,4 @@
-import { After, Before, setDefaultTimeout } from "@cucumber/cucumber";
+import {After, AfterStep, Before, setDefaultTimeout} from "@cucumber/cucumber";
 import { Browser, chromium, Page } from "@playwright/test";
 
 let page: Page;
@@ -21,6 +21,13 @@ Before(async () => {
 
 After(async () => {
     await browser.close();
+});
+
+AfterStep(async function (Scenario) {
+    await this.attach(
+        await page.screenshot(
+            { path: `./screenshots/${Scenario.pickle.name}.png`, fullPage: true }), "image/png"
+    );
 });
 
 export { page, browser };

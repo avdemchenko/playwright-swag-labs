@@ -12,7 +12,7 @@ var options = {
     reportSuiteAsScenarios: true,
     launchReport: true,
     metadata: {
-        "version": "1.1.1"
+        "version": "1.0.0"
     }
 };
 
