@@ -1,0 +1,72 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-want-to-visit-home-page;open-home-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Open home page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open 'home' page",
+            "match": {
+              "location": "tests/e2e/steps/home.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 740000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see 'Swag Lsabs' page title",
+            "match": {
+              "location": "tests/e2e/steps/home.steps.ts:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5024000000,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Swag L\u001b[7ms\u001b[27mabs\"\u001b[39m\nReceived string: \u001b[31m\"Swag Labs\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Swag Labs\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Swag Labs\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Swag Labs\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Swag Labs\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Swag Labs\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Swag Labs\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Swag Labs\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Swag Labs\"\u001b[22m\n\n    at Proxy.<anonymous> (/Users/oleksii.demchenko/Documents/playwright-swag-labs/node_modules/@playwright/test/lib/expect.js:165:37)\n    at verifyPageTitle (/Users/oleksii.demchenko/Documents/playwright-swag-labs/tests/e2e/modules/assert.ts:7:43)\n    at World.<anonymous> (/Users/oleksii.demchenko/Documents/playwright-swag-labs/tests/e2e/steps/home.steps.ts:10:40)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 177000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@debug",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-want-to-visit-home-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I want to visit home page",
+    "tags": [],
+    "uri": "tests/e2e/features/home.feature"
+  }
+]
