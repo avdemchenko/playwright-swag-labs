@@ -4,7 +4,22 @@
       "name": "home",
       "id": "https://www.saucedemo.com/"
     }
-  ]
+  ],
+  "users": [
+    {
+      "name": "standard",
+      "id": "standard_user"
+    },
+    {
+      "name": "locked",
+      "id": "locked_out_user"
+    },
+    {
+      "name": "problem",
+      "id": "problem_user"
+    }
+  ],
+  "password": "secret_sauce"
 }
 
 
