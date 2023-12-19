@@ -6,6 +6,7 @@
   "scripts": {
     "demo": "npx cucumber-js -p test_runner --tags @demo",
     "debug": "npx cucumber-js -p test_runner --tags @debug",
+    "regression": "npx cucumber-js -p test_runner --tags @regression",
     "generate-report": "npx cucumber-js -p test_runner -tags @debug & node ./htmlReportGenerator.js"
   },
   "repository": {
